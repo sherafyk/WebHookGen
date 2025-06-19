@@ -34,7 +34,7 @@ docker compose up -d --build
 
 ```bash
 docker ps
-docker logs <container_name> --tail=100
+docker logs webhookgen-app-1 --tail=100
 ```
 
 ### Build and Run with Docker
