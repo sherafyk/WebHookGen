@@ -13,6 +13,30 @@ WebHookGen is a minimal Flask application used to receive webhook requests and d
    python app/main.py
    ```
 
+   ### Setup
+```
+git clone https://github.com/sherafyk/WebHookGen.git
+```
+```
+cd WebHookGen
+```
+   #### Updating
+
+Pull the latest changes and rebuild:
+```bash
+docker-compose down
+git pull
+docker-compose up -d --build
+```
+##### Additional diagnostic checks
+
+```
+docker ps
+```
+```
+docker logs sfk3-app-1 --tail=100
+```
+
 2. Build and run with Docker:
 
    ```bash
