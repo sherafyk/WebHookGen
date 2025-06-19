@@ -142,6 +142,8 @@
      webhook-gen
    ```
 
+   3. Review all code and edit the README.md file to be a comprehensive documentation of the code, with clear instructions at the top.
+
 ---
 
 ### Task 4: Deploy Behind Apache & Configure Letterly
@@ -176,4 +178,4 @@
 
 ---
 
-That’s it—four self-contained tasks to hand to Codex.
+
