@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      - "50011:50011"
+    environment:
+      - WEBHOOK_PASS=AppPass1
+      - PORT=50011
+    volumes:
+      - ./app/data.json:/app/data.json
