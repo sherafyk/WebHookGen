@@ -25,9 +25,9 @@ cd WebHookGen
 Pull the latest changes and rebuild with Docker Compose:
 
 ```bash
-docker compose down
+docker-compose down
 git pull
-docker compose up -d --build
+docker-compose up -d --build
 ```
 
 ##### Additional diagnostic checks
