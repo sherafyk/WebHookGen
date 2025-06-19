@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 from flask_httpauth import HTTPBasicAuth
 import json
 import os
@@ -45,6 +45,16 @@ def webhook():
     items.insert(0, data)
     save_data(items)
     return {'status': 'received'}, 200
+
+
+@app.route('/delete/<int:index>', methods=['GET'])
+@auth.login_required
+def delete_item(index):
+    items = load_data()
+    if 0 <= index < len(items):
+        items.pop(index)
+        save_data(items)
+    return redirect(url_for('home'))
 
 
 if __name__ == '__main__':
