@@ -34,6 +34,7 @@
       <h3>{{ item.get("title", "Untitled") }}</h3>
       <p><strong>Updated At:</strong> {{ item.get("updated_at", "") }}</p>
       <p>{{ item.get("rewrite", {}).get("text", "") }}</p>
+      <a href="/delete/{{ loop.index0 }}" style="float:right;font-size:10px;">delete</a>
     </div>
       {% endfor %}
     {% else %}

@@ -64,6 +64,9 @@ The application listens on the port defined by the `PORT` environment variable (
 ## Webhook Usage
 
 Send `POST` requests to `/webhook` with a JSON body or form data. Submissions are stored in `app/data.json` and displayed on the home page.
+Individual entries can be removed from the interface by clicking the small
+`delete` link at the bottom-right corner of each card. The entry will be
+deleted from `data.json` as well.
 
 ## Project Structure
 
